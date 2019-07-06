@@ -1,0 +1,31 @@
+.search{
+    text-align: center;
+}
+
+#bar{
+    width: 30%;
+    margin-top: 2%;
+}
+.search button{
+    height: 22px;
+    background-color: none;
+}
+
+.search-results{
+  margin-left: 4%;
+  display: flex;
+  flex-wrap: wrap;   
+  width: 90%;
+  justify-content: space-evenly;
+}
+
+.list-items{
+    text-align: center;
+    padding: 2%;
+    margin-top: 1%;
+    display: inline-block;
+    width: 40%;
+    border: 1px solid lightgray;
+    
+}
+

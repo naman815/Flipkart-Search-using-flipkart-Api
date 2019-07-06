@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>
+            <%= title %>
+        </title>
+        <link rel="stylesheet" href="/css/home.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="search">
+            <img src="/images/ShopNani.png" alt="">
+            <form action="/search/results" method="GET">
+                <input type="text" name="query" placeholder="Search any product,brand and more" id="bar" >
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+
+        <div class="search-results">
+            <%for(data of data){ %>
+                <div class="list-items ">
+                    <div class="product-image">
+                        <img src=<%= data.productBaseInfoV1.imageUrls["200x200"]%> alt="">    
+                    </div>
+
+                   <div class="product-info">
+                        <span style="font-weight: bold"><%= data.productBaseInfoV1.title %> </span><br>
+                        <span style="font-weight: bold">Maximum Retail Price: </span>
+                        <%= data.productBaseInfoV1.maximumRetailPrice.currency %>
+                        <%= data.productBaseInfoV1.maximumRetailPrice.amount %><br>
+                        <span style="font-weight: bold">Flipkart Special Price: </span>
+                        <%= data.productBaseInfoV1.flipkartSpecialPrice.currency %>
+                        <%= data.productBaseInfoV1.flipkartSpecialPrice.amount %><br>
+                        
+                         <ul style="text-align: left">
+                                <span style="font-weight: bold">Key Specification: </span>
+                                <% for(keySpec of data.categorySpecificInfoV1.keySpecs){ %>
+                                    <li style="font-size: 0.8rem"><%= keySpec%></li>
+                                 <% } %>
+                         </ul>
+                         <span style="font-weight: bold">Buy At: </span>
+                        <a href="<%= data.productBaseInfoV1.productUrl %>" target="_blank">Product Link</a>
+                   </div>
+
+                </div>
+           <% } %>
+        </div>
+    </body>
+
+</html>
