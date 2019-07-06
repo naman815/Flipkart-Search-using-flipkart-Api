@@ -1,0 +1,9 @@
+{
+    "name": "flipkart",
+    "description": "Flipkar search engine",
+    "repository": "https://github.com/naman815/Flipkart-Search-using-flipkart-Api",
+    
+    "keywords": ["node", "express", "heroku"]
+    
+  }
+  
