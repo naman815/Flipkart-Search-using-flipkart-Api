@@ -1,7 +1,7 @@
 const express = require('express'); // including express js 
 const cookieParser = require('cookie-parser'); // including cookie-parser
 const app = express(); // object of express module
-const port = process.env.PORT || 8000; // defining port for local server
+const port = process.env.PORT || 8000; // defining port for local server or dynamic port for heroku
 const expressLayouts = require('express-ejs-layouts'); // including express ejs layout
 
 app.use(express.urlencoded());

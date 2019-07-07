@@ -29,3 +29,13 @@
     
 }
 
+@media only screen and (max-width : 500px){
+    .list-items{
+        display: block;
+        width : 80%;
+    }
+
+    .search-results{
+        width: 100%;
+    }
+}
