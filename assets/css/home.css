@@ -1,3 +1,16 @@
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Slabo 27px', serif;
+font-family: 'Dosis', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Bree Serif', serif;
+font-family: 'Monda', sans-serif;
+}
+
+
+
 .search{
     text-align: center;
 }
