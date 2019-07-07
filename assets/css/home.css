@@ -38,4 +38,13 @@
     .search-results{
         width: 100%;
     }
+
+    .search img{
+        width: 450px;
+        height: 150px;
+    }
+
+    #bar{
+        width: 80%;
+    }
 }
