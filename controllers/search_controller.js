@@ -3,8 +3,8 @@ const axios = require('axios'); // including axios
 const axiosInstance = axios.create({
   baseURL: 'https://affiliate-api.flipkart.net/affiliate/1.0/search.json', // base url of flipkart api
   headers: {                                                               // header which includes affiliate id and token 
-    'Fk-Affiliate-Id': 'yuganshch',
-    'Fk-Affiliate-Token': '34adf1305516462d8ce93de45594da81',
+    'Fk-Affiliate-Id': 'naman815g',
+    'Fk-Affiliate-Token': '0b14241cbdc447fb87c27d5e57e64b50',
   }
 })
 
